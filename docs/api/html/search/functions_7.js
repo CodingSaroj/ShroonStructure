@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['tree_77',['Tree',['../classShroon_1_1Structure_1_1Tree.html#a12ddef10495414dead0e160692cff828',1,'Shroon::Structure::Tree::Tree(const ValueType &amp;value)'],['../classShroon_1_1Structure_1_1Tree.html#a601f47675ab5f8b17155114d5e3b157f',1,'Shroon::Structure::Tree::Tree(ValueType &amp;&amp;value)'],['../classShroon_1_1Structure_1_1Tree.html#adb6811125ea81e34ab4c12e1d3667619',1,'Shroon::Structure::Tree::Tree(CArgs &amp;&amp;... cargs)']]],
+  ['treenode_78',['TreeNode',['../classShroon_1_1Structure_1_1TreeNode.html#aeecf799a2e77c30a56e82cdd8caa9ded',1,'Shroon::Structure::TreeNode::TreeNode(const ValueType &amp;value, TreeNode&lt; ValueType &gt; *parent=nullptr)'],['../classShroon_1_1Structure_1_1TreeNode.html#a31bea01fb59a1d33b93ff20d64d6168f',1,'Shroon::Structure::TreeNode::TreeNode(ValueType &amp;&amp;value, TreeNode&lt; ValueType &gt; *parent=nullptr)'],['../classShroon_1_1Structure_1_1TreeNode.html#ae4b1f8373afce1331edf78532291b880',1,'Shroon::Structure::TreeNode::TreeNode(TreeNode&lt; ValueType &gt; *parent, CArgs &amp;&amp;... cargs)']]]
+];

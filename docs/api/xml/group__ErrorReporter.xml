@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__ErrorReporter" kind="group">
+    <compoundname>ErrorReporter</compoundname>
+    <title>ErrorReporter</title>
+    <innernamespace refid="namespaceShroon">Shroon</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__ErrorReporter_1gaf536ffcd9604ed40167e38652f1bcbb3" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(std::string, bool)&gt;</type>
+        <definition>std::function&lt; void(std::string, bool)&gt; Shroon::Structure::ErrorReporter</definition>
+        <argsstring></argsstring>
+        <name>ErrorReporter</name>
+        <initializer>= [](std::string log, bool fatal)
+    {
+        std::cerr&lt;&lt;&quot;Shroon::Structure::&quot;&lt;&lt;(fatal ? &quot;FatalError: &quot; : &quot;Error: &quot;)&lt;&lt;log&lt;&lt;&quot;\n&quot;;
+
+        if (fatal)
+        {
+            exit(1);
+        }
+    }</initializer>
+        <briefdescription>
+<para>A callback the data structures will use when an error occurs. First parameter is the info about the error and second parameter is true when the error is fatal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ErrorReporter.hpp" line="49" column="30" bodyfile="src/ErrorReporter.hpp" bodystart="24" bodyend="-1" declfile="src/ErrorReporter.hpp" declline="49" declcolumn="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This group contains the error reporting API for this library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

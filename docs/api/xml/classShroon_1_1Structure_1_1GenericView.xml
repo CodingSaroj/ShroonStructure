@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classShroon_1_1Structure_1_1GenericView" kind="class" language="C++" prot="public">
+    <compoundname>Shroon::Structure::GenericView</compoundname>
+    <includes refid="GenericView_8hpp" local="no">GenericView.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename UnitType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classShroon_1_1Structure_1_1GenericView_1a2f922f057abd0b62e502a65aa83a1768" prot="public" static="no">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; UnitType, <ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref>&lt; UnitType &gt; &gt;</type>
+        <definition>using Shroon::Structure::GenericView&lt; UnitType &gt;::Iterator =  GenericIterator&lt;UnitType, GenericView&lt;UnitType&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+<para>The type of iterator used to iterate this view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="36" column="13" bodyfile="src/GenericView.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classShroon_1_1Structure_1_1GenericView_1aa1fe817a7bc2003c4a2b4ec2d0c686e5" prot="public" static="no">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; const UnitType, const <ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref>&lt; UnitType &gt; &gt;</type>
+        <definition>using Shroon::Structure::GenericView&lt; UnitType &gt;::ConstIterator =  GenericIterator&lt;const UnitType, const GenericView&lt;UnitType&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+<para>The type of iterator used to iterate a const version this view. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="41" column="13" bodyfile="src/GenericView.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericView_1a5c6ed9100d970b19f8281287bd8c50c2" prot="private" static="no" mutable="no">
+        <type>UnitType *</type>
+        <definition>UnitType* Shroon::Structure::GenericView&lt; UnitType &gt;::m_Data</definition>
+        <argsstring></argsstring>
+        <name>m_Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="174" column="23" bodyfile="src/GenericView.hpp" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericView_1a7712392c0ccca8d313be7b5967b3ceb3" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Shroon::Structure::GenericView&lt; UnitType &gt;::m_Size</definition>
+        <argsstring></argsstring>
+        <name>m_Size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="175" column="20" bodyfile="src/GenericView.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericView_1a29657e5c490d5da9a7c6e10ea347d66d" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend Shroon::Structure::GenericView&lt; UnitType &gt;::Iterator</definition>
+        <argsstring></argsstring>
+        <name>Iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="192" column="20" bodyfile="src/GenericView.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericView_1a3c0c1546d6711fa83e10d79f329e3b29" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend Shroon::Structure::GenericView&lt; UnitType &gt;::ConstIterator</definition>
+        <argsstring></argsstring>
+        <name>ConstIterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="193" column="20" bodyfile="src/GenericView.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1adf04ae73537d26ef9f0204cb57ddc858" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Shroon::Structure::GenericView&lt; UnitType &gt;::GenericView</definition>
+        <argsstring>(UnitType *data, size_t size)</argsstring>
+        <name>GenericView</name>
+        <param>
+          <type>UnitType *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> with memory block as <computeroutput>data</computeroutput> of size <computeroutput>size</computeroutput> bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the memory block this <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> will view. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the memory block this <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> will view. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="49" column="13" bodyfile="src/GenericView.hpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a1d0997b8ddb43829d22dacfacd772585" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UnitType *</type>
+        <definition>UnitType* Shroon::Structure::GenericView&lt; UnitType &gt;::Data</definition>
+        <argsstring>()</argsstring>
+        <name>Data</name>
+        <briefdescription>
+<para>Returns the pointer to the memory this object views. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to <computeroutput>UnitType</computeroutput> which points to the memory this object views. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="59" column="30" bodyfile="src/GenericView.hpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a58e98a59a21c1f70cdb1d89810c993ab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const UnitType *</type>
+        <definition>const UnitType* Shroon::Structure::GenericView&lt; UnitType &gt;::Data</definition>
+        <argsstring>() const</argsstring>
+        <name>Data</name>
+        <briefdescription>
+<para>Returns a read-only (const) pointer to the memory this object views. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const pointer to <computeroutput>UnitType</computeroutput> which points to the memory this object views. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="69" column="36" bodyfile="src/GenericView.hpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t Shroon::Structure::GenericView&lt; UnitType &gt;::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Returns the size of memory block this object views. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of memory block this object views. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="79" column="27" bodyfile="src/GenericView.hpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a00e76fc6df517dbf2b9250fcb838bec6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UnitType &amp;</type>
+        <definition>UnitType&amp; Shroon::Structure::GenericView&lt; UnitType &gt;::At</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>At</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <computeroutput>UnitType &amp;</computeroutput> at index <computeroutput>index</computeroutput> inside the memory block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index inside the memory block from which data needs to be fetched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput>UnitType &amp;</computeroutput> at <computeroutput>index</computeroutput> inside the memory block. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="91" column="30" bodyfile="src/GenericView.hpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1aedeecf23228e2b56fdfc1300ca0d4457" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const UnitType &amp;</type>
+        <definition>const UnitType&amp; Shroon::Structure::GenericView&lt; UnitType &gt;::At</definition>
+        <argsstring>(size_t index) const</argsstring>
+        <name>At</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <computeroutput>const UnitType &amp;</computeroutput> at index <computeroutput>index</computeroutput> inside the memory block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index inside the memory block from which data needs to be fetched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput>const UnitType &amp;</computeroutput> at <computeroutput>index</computeroutput> inside the memory block. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="103" column="36" bodyfile="src/GenericView.hpp" bodystart="103" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a42af29b526807bd7bffd9e487105790b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref>&lt; UnitType &gt;</type>
+        <definition>GenericView&lt;UnitType&gt; Shroon::Structure::GenericView&lt; UnitType &gt;::View</definition>
+        <argsstring>(size_t begin, size_t size=SIZE_MAX)</argsstring>
+        <name>View</name>
+        <param>
+          <type>size_t</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>SIZE_MAX</defval>
+        </param>
+        <briefdescription>
+<para>Returns another <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> whose view begins at index <computeroutput>begin</computeroutput> and is of size <computeroutput>size</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index inside memory block from where the new <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> will begin. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the memory block which the new <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> will view. Defaults to <computeroutput>SIZE_MAX</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> viewing memory <computeroutput>begin</computeroutput> bytes after start of this memory block and of size <computeroutput>size</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="119" column="32" bodyfile="src/GenericView.hpp" bodystart="119" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a4845ad8de58b48adfe64c33a9ee264b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref>&lt; UnitType &gt;</type>
+        <definition>const GenericView&lt;UnitType&gt; Shroon::Structure::GenericView&lt; UnitType &gt;::View</definition>
+        <argsstring>(size_t begin, size_t size=SIZE_MAX) const</argsstring>
+        <name>View</name>
+        <param>
+          <type>size_t</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+          <defval>SIZE_MAX</defval>
+        </param>
+        <briefdescription>
+<para>Returns another read-only (const) <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> whose view begins at index <computeroutput>begin</computeroutput> and is of size <computeroutput>size</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index inside memory block from where the new <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> will begin. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the memory block which the new <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> will view. Defaults to <computeroutput>SIZE_MAX</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput>const <ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></computeroutput> viewing memory <computeroutput>begin</computeroutput> bytes after start of this memory block and of size <computeroutput>size</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="139" column="38" bodyfile="src/GenericView.hpp" bodystart="139" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a085b29b5bf040497c4141f93baa484af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UnitType &amp;</type>
+        <definition>UnitType&amp; Shroon::Structure::GenericView&lt; UnitType &gt;::operator[]</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <computeroutput>UnitType &amp;</computeroutput> at index <computeroutput>index</computeroutput> inside the memory block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index inside the memory block from which data needs to be fetched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput>UnitType &amp;</computeroutput> at <computeroutput>index</computeroutput> inside the memory block. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="156" column="30" bodyfile="src/GenericView.hpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1ae06ab76b9521a6ee509c5360a8b9e961" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const UnitType &amp;</type>
+        <definition>const UnitType&amp; Shroon::Structure::GenericView&lt; UnitType &gt;::operator[]</definition>
+        <argsstring>(size_t index) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Returns a <computeroutput>const UnitType &amp;</computeroutput> at index <computeroutput>index</computeroutput> inside the memory block. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index inside the memory block from which data needs to be fetched.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <computeroutput>const UnitType &amp;</computeroutput> at <computeroutput>index</computeroutput> inside the memory block. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="168" column="36" bodyfile="src/GenericView.hpp" bodystart="168" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a6b579011dbfe85768698d561fe0596f6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Shroon::Structure::GenericView&lt; UnitType &gt;::IsIndexValid</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>IsIndexValid</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="177" column="25" bodyfile="src/GenericView.hpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a0066cdeb692f11a83bbca84c245ece41" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UnitType &amp;</type>
+        <definition>UnitType&amp; Shroon::Structure::GenericView&lt; UnitType &gt;::Get</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="182" column="30" bodyfile="src/GenericView.hpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericView_1a95f45eeb00ef45b23cbacbeeb2c722a5" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const UnitType &amp;</type>
+        <definition>const UnitType&amp; Shroon::Structure::GenericView&lt; UnitType &gt;::Get</definition>
+        <argsstring>(size_t index) const</argsstring>
+        <name>Get</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="187" column="36" bodyfile="src/GenericView.hpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides a view into a block of memory containing <computeroutput>UnitType</computeroutput> s. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>UnitType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of data which the provided memory block contains. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Shroon::Structure::GenericView&lt; UnitType &gt;</label>
+        <link refid="classShroon_1_1Structure_1_1GenericView"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/GenericView.hpp" line="31" column="1" bodyfile="src/GenericView.hpp" bodystart="30" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a00e76fc6df517dbf2b9250fcb838bec6" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>At</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1aedeecf23228e2b56fdfc1300ca0d4457" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>At</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1aa1fe817a7bc2003c4a2b4ec2d0c686e5" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>ConstIterator</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a3c0c1546d6711fa83e10d79f329e3b29" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>ConstIterator</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a1d0997b8ddb43829d22dacfacd772585" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Data</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a58e98a59a21c1f70cdb1d89810c993ab" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Data</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1adf04ae73537d26ef9f0204cb57ddc858" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>GenericView</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a0066cdeb692f11a83bbca84c245ece41" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Get</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a95f45eeb00ef45b23cbacbeeb2c722a5" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Get</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a6b579011dbfe85768698d561fe0596f6" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>IsIndexValid</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a2f922f057abd0b62e502a65aa83a1768" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Iterator</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a29657e5c490d5da9a7c6e10ea347d66d" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Iterator</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a5c6ed9100d970b19f8281287bd8c50c2" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>m_Data</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a7712392c0ccca8d313be7b5967b3ceb3" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>m_Size</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a085b29b5bf040497c4141f93baa484af" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>operator[]</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1ae06ab76b9521a6ee509c5360a8b9e961" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>operator[]</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>Size</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a42af29b526807bd7bffd9e487105790b" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>View</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericView_1a4845ad8de58b48adfe64c33a9ee264b6" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericView</scope><name>View</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

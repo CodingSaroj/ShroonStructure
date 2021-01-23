@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="GenericView_8hpp" kind="file" language="C++">
+    <compoundname>GenericView.hpp</compoundname>
+    <includes local="no">iomanip</includes>
+    <includes local="no">iostream</includes>
+    <includes refid="GenericIterator_8hpp" local="yes">GenericIterator.hpp</includes>
+    <includedby refid="Structures_8hpp" local="yes">src/Structures.hpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="2">
+        <label>iomanip</label>
+      </node>
+      <node id="6">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>GenericIterator.hpp</label>
+        <link refid="GenericIterator_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>cstddef</label>
+      </node>
+      <node id="7">
+        <label>ErrorReporter.hpp</label>
+        <link refid="ErrorReporter_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/GenericView.hpp</label>
+        <link refid="GenericView_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/Structures.hpp</label>
+        <link refid="Structures_8hpp"/>
+      </node>
+      <node id="1">
+        <label>src/GenericView.hpp</label>
+        <link refid="GenericView_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classShroon_1_1Structure_1_1GenericView" prot="public">Shroon::Structure::GenericView</innerclass>
+    <innernamespace refid="namespaceShroon">Shroon</innernamespace>
+    <innernamespace refid="namespaceShroon_1_1Structure">Shroon::Structure</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UnitType</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::GenericView&lt; UnitType &gt; &amp;view)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">Shroon::Structure::GenericView</ref>&lt; UnitType &gt; &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the <computeroutput>view</computeroutput> to <computeroutput>out</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>UnitType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of data which the provided memory block contains. Used for template parameters of <computeroutput>GenericView</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>view</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>GenericView&lt;UnitType&gt;</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it.</para>
+</simplesect>
+Suppose the memory block of the view of <computeroutput>char</computeroutput> is:</para>
+<para><programlisting><codeline><highlight class="normal">Index:<sp/>0<sp/>1<sp/>2<sp/>3<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">Value:<sp/>a<sp/>b<sp/>c<sp/>d<sp/>e</highlight></codeline>
+</programlisting></para>
+<para>then what <computeroutput>std::cout&lt;&lt;view;</computeroutput> will print to <computeroutput>stdout</computeroutput> is this:</para>
+<para><programlisting><codeline><highlight class="normal">0:<sp/>a<sp/></highlight></codeline>
+<codeline><highlight class="normal">1:<sp/>b</highlight></codeline>
+<codeline><highlight class="normal">2:<sp/>c</highlight></codeline>
+<codeline><highlight class="normal">3:<sp/>d</highlight></codeline>
+<codeline><highlight class="normal">4:<sp/>e</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="242" column="1" bodyfile="src/GenericView.hpp" bodystart="242" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="group__OutputStreamOperators_1ga0fcf44cd9af8a867af765d99303d66bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::MemoryView &amp;view)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" kindref="member">Shroon::Structure::MemoryView</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Specialization which outputs the <computeroutput>view</computeroutput> to <computeroutput>out</computeroutput> in a specific way for only <computeroutput>MemoryView</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>view</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>MemoryView</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it.</para>
+</simplesect>
+Suppose the contents of memory are:</para>
+<para><programlisting><codeline><highlight class="normal">Index|<sp/>0<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/>6<sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/>8<sp/><sp/><sp/><sp/>9<sp/><sp/><sp/><sp/>10<sp/><sp/><sp/>11<sp/><sp/><sp/>12<sp/><sp/><sp/>13<sp/><sp/><sp/>14<sp/><sp/><sp/>15<sp/><sp/><sp/>16</highlight></codeline>
+<codeline><highlight class="normal">-----+-------------------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">Value|<sp/>0x00<sp/>0x01<sp/>0x02<sp/>0x03<sp/>0x04<sp/>0x05<sp/>0x06<sp/>0x07<sp/>0x08<sp/>0x09<sp/>0x0A<sp/>0x0B<sp/>0x0C<sp/>0x0D<sp/>0x0E<sp/>0x0F<sp/>0x10</highlight></codeline>
+</programlisting></para>
+<para>then the output of <computeroutput>std::cout&lt;&lt;memoryView;</computeroutput> will be:</para>
+<para><programlisting><codeline><highlight class="normal">0x00<sp/>0x01<sp/>0x02<sp/>0x03<sp/>0x04<sp/>0x05<sp/>0x06<sp/>0x07<sp/>0x08<sp/>0x09<sp/>0x0a<sp/>0x0b<sp/>0x0c<sp/>0x0d<sp/>0x0e<sp/>0x0f</highlight></codeline>
+<codeline><highlight class="normal">0x10</highlight></codeline>
+</programlisting></para>
+<para>As you can see this type of output is much more expected when memory is being serialized.</para>
+<para><bold>Note</bold> - The case of the alphabets can be controlled in the usual way using <computeroutput>std::uppercase</computeroutput> and <computeroutput>std::nouppercase</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="281" column="1" bodyfile="src/GenericView.hpp" bodystart="281" bodyend="301"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GenericIterator_8hpp" kindref="compound">GenericIterator.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceShroon" kindref="compound">Shroon</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Structure</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UnitType&gt;</highlight></codeline>
+<codeline lineno="30" refid="classShroon_1_1Structure_1_1GenericView" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36" refid="classShroon_1_1Structure_1_1GenericView_1a2f922f057abd0b62e502a65aa83a1768" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">Iterator</ref><sp/>=<sp/><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator&lt;UnitType, GenericView&lt;UnitType&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classShroon_1_1Structure_1_1GenericView_1aa1fe817a7bc2003c4a2b4ec2d0c686e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">ConstIterator</ref><sp/>=<sp/><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator&lt;const UnitType, const GenericView&lt;UnitType&gt;</ref>&gt;;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="classShroon_1_1Structure_1_1GenericView_1adf04ae73537d26ef9f0204cb57ddc858" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1adf04ae73537d26ef9f0204cb57ddc858" kindref="member">GenericView</ref>(UnitType<sp/>*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_Data(data),<sp/>m_Size(size)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classShroon_1_1Structure_1_1GenericView_1a1d0997b8ddb43829d22dacfacd772585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>UnitType<sp/>*<sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a1d0997b8ddb43829d22dacfacd772585" kindref="member">Data</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classShroon_1_1Structure_1_1GenericView_1a58e98a59a21c1f70cdb1d89810c993ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UnitType<sp/>*<sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a58e98a59a21c1f70cdb1d89810c993ab" kindref="member">Data</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="70"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" kindref="member">Size</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="80"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Size;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classShroon_1_1Structure_1_1GenericView_1a00e76fc6df517dbf2b9250fcb838bec6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>UnitType<sp/>&amp;<sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a00e76fc6df517dbf2b9250fcb838bec6" kindref="member">At</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data[index];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classShroon_1_1Structure_1_1GenericView_1aedeecf23228e2b56fdfc1300ca0d4457" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UnitType<sp/>&amp;<sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1aedeecf23228e2b56fdfc1300ca0d4457" kindref="member">At</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data[index];</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classShroon_1_1Structure_1_1GenericView_1a42af29b526807bd7bffd9e487105790b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView&lt;UnitType&gt;</ref><sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a42af29b526807bd7bffd9e487105790b" kindref="member">View</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>begin,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>SIZE_MAX)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>==<sp/>SIZE_MAX)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>m_Size<sp/>-<sp/>begin;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView&lt;UnitType&gt;</ref>(m_Data<sp/>+<sp/>begin,<sp/>size);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="classShroon_1_1Structure_1_1GenericView_1a4845ad8de58b48adfe64c33a9ee264b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView&lt;UnitType&gt;</ref><sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a4845ad8de58b48adfe64c33a9ee264b6" kindref="member">View</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>begin,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>SIZE_MAX)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="140"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>==<sp/>SIZE_MAX)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>m_Size<sp/>-<sp/>begin;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView&lt;UnitType&gt;</ref>(m_Data<sp/>+<sp/>begin,<sp/>size);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classShroon_1_1Structure_1_1GenericView_1a085b29b5bf040497c4141f93baa484af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>UnitType<sp/>&amp;<sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a085b29b5bf040497c4141f93baa484af" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data[index];</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="classShroon_1_1Structure_1_1GenericView_1ae06ab76b9521a6ee509c5360a8b9e961" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UnitType<sp/>&amp;<sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1ae06ab76b9521a6ee509c5360a8b9e961" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="169"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data[index];</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UnitType<sp/>*<sp/>m_Data;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>m_Size;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsIndexValid(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>index<sp/>&lt;<sp/>m_Size;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>UnitType<sp/>&amp;<sp/>Get(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data[index];</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UnitType<sp/>&amp;<sp/>Get(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>index)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="188"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_Data[index];</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1a2f922f057abd0b62e502a65aa83a1768" kindref="member">Iterator</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView_1aa1fe817a7bc2003c4a2b4ec2d0c686e5" kindref="member">ConstIterator</ref>;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">MemoryView</ref><sp/>=<sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView&lt;uint8_t&gt;</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>UnitType&gt;</highlight></codeline>
+<codeline lineno="242" refid="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" refkind="member"><highlight class="normal">std::ostream<sp/>&amp;<sp/><ref refid="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">Shroon::Structure::GenericView&lt;UnitType&gt;</ref><sp/>&amp;<sp/>view)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>view.<ref refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" kindref="member">Size</ref>();<sp/>i++)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out&lt;&lt;i&lt;&lt;</highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;view[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="281" refid="group__OutputStreamOperators_1ga0fcf44cd9af8a867af765d99303d66bd" refkind="member"><highlight class="normal">std::ostream<sp/>&amp;<sp/><ref refid="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" kindref="member">operator&lt;&lt;</ref>(std::ostream<sp/>&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">Shroon::Structure::MemoryView</ref><sp/>&amp;<sp/>view)</highlight></codeline>
+<codeline lineno="282"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>view.<ref refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" kindref="member">Size</ref>();<sp/>i++)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>=<sp/>view[i];</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out&lt;&lt;</highlight><highlight class="stringliteral">&quot;0x&quot;</highlight><highlight class="normal">&lt;&lt;std::hex&lt;&lt;std::setw(2)&lt;&lt;std::setfill(</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="keywordtype">byte</highlight><highlight class="normal">&lt;&lt;std::dec;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>==<sp/>0<sp/>||<sp/>(i<sp/>+<sp/>1)<sp/>%<sp/>16<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((i<sp/>!=<sp/>0<sp/>&amp;&amp;<sp/>(i<sp/>+<sp/>1)<sp/>%<sp/>16<sp/>==<sp/>0)<sp/>||<sp/>i<sp/>+<sp/>1<sp/>==<sp/>view.<ref refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" kindref="member">Size</ref>())</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/GenericView.hpp"/>
+  </compounddef>
+</doxygen>

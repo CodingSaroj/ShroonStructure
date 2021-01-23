@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__ErrorReporting" kind="group">
+    <compoundname>ErrorReporting</compoundname>
+    <title>ErrorReporting</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__ErrorReporting_1gaa663639f37c5e84cf29963eae5fb3f10" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(std::string, bool)&gt;</type>
+        <definition>std::function&lt;void(std::string, bool)&gt; Shroon::Structure::ErrorReporter</definition>
+        <argsstring></argsstring>
+        <name>ErrorReporter</name>
+        <briefdescription>
+<para>A callback the data structures will use when an error occurs. First parameter is the info about the error and second parameter is true when the error is fatal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ErrorReporter.hpp" line="27" column="30" declfile="src/ErrorReporter.hpp" declline="27" declcolumn="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__ErrorReporting_1gaa597ef9c4c9bf360e52aa1d5aff96322" prot="public" static="no">
+        <name>SHRN_STRUCTURE_DEFAULT_ERROR_REPORTER</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>A basic error reporter function is defined if this is 1. This macro only needs to be defined as 1 in one translation unit (.cpp file) in global namespace. Don&apos;t define this as 1 if you are defining your own error reporter function. If no macro with the name is defined, then it is defined as 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ErrorReporter.hpp" line="48" column="13" bodyfile="src/ErrorReporter.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This group contains the error reporting API for this library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

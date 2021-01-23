@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__DataStructures" kind="group">
+    <compoundname>DataStructures</compoundname>
+    <title>DataStructures</title>
+    <innerclass refid="classShroon_1_1Structure_1_1GenericIterator" prot="public">Shroon::Structure::GenericIterator</innerclass>
+    <innerclass refid="classShroon_1_1Structure_1_1GenericView" prot="public">Shroon::Structure::GenericView</innerclass>
+    <innerclass refid="classShroon_1_1Structure_1_1TreeNode" prot="public">Shroon::Structure::TreeNode</innerclass>
+    <innerclass refid="classShroon_1_1Structure_1_1Tree" prot="public">Shroon::Structure::Tree</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" prot="public" static="no">
+        <type>GenericView&lt; uint8_t &gt;</type>
+        <definition>using Shroon::Structure::MemoryView = typedef GenericView&lt;uint8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>MemoryView</name>
+        <briefdescription>
+<para>It specifically views the contents of memory as bytes (<computeroutput>uint8_t</computeroutput>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="199" column="9" bodyfile="src/GenericView.hpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This group contains all the data structures in this library. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="group__OutputStreamOperators" kind="group">
+    <compoundname>OutputStreamOperators</compoundname>
+    <title>OutputStreamOperators</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__OutputStreamOperators_1gaa2709b0b1d9d2eb88883ff47d89ed20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ValueType</type>
+          </param>
+          <param>
+            <type>typename StructureType</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt; &amp;iter)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">Shroon::Structure::GenericIterator</ref>&lt; ValueType, StructureType &gt; &amp;</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the content of <computeroutput>iter</computeroutput> to <computeroutput>out</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of an element inside <computeroutput>StructureType</computeroutput>. Used for template parameters of <computeroutput>GenericIterator</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StructureType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the structure the iterator will be iterating. Used for template parameters of <computeroutput>GenericIterator</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>iter</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>GenericIterator&lt;ValueType, StructureType&gt;</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="248" column="1" bodyfile="src/GenericIterator.hpp" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UnitType</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::GenericView&lt; UnitType &gt; &amp;view)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">Shroon::Structure::GenericView</ref>&lt; UnitType &gt; &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the <computeroutput>view</computeroutput> to <computeroutput>out</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>UnitType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of data which the provided memory block contains. Used for template parameters of <computeroutput>GenericView</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>view</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>GenericView&lt;UnitType&gt;</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it.</para>
+</simplesect>
+Suppose the memory block of the view of <computeroutput>char</computeroutput> is:</para>
+<para><programlisting><codeline><highlight class="normal">Index:<sp/>0<sp/>1<sp/>2<sp/>3<sp/>4</highlight></codeline>
+<codeline><highlight class="normal">Value:<sp/>a<sp/>b<sp/>c<sp/>d<sp/>e</highlight></codeline>
+</programlisting></para>
+<para>then what <computeroutput>std::cout&lt;&lt;view;</computeroutput> will print to <computeroutput>stdout</computeroutput> is this:</para>
+<para><programlisting><codeline><highlight class="normal">0:<sp/>a<sp/></highlight></codeline>
+<codeline><highlight class="normal">1:<sp/>b</highlight></codeline>
+<codeline><highlight class="normal">2:<sp/>c</highlight></codeline>
+<codeline><highlight class="normal">3:<sp/>d</highlight></codeline>
+<codeline><highlight class="normal">4:<sp/>e</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="242" column="1" bodyfile="src/GenericView.hpp" bodystart="242" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="group__OutputStreamOperators_1ga0fcf44cd9af8a867af765d99303d66bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::MemoryView &amp;view)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" kindref="member">Shroon::Structure::MemoryView</ref> &amp;</type>
+          <declname>view</declname>
+        </param>
+        <briefdescription>
+<para>Specialization which outputs the <computeroutput>view</computeroutput> to <computeroutput>out</computeroutput> in a specific way for only <computeroutput>MemoryView</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>view</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>view</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>MemoryView</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it.</para>
+</simplesect>
+Suppose the contents of memory are:</para>
+<para><programlisting><codeline><highlight class="normal">Index|<sp/>0<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/>2<sp/><sp/><sp/><sp/>3<sp/><sp/><sp/><sp/>4<sp/><sp/><sp/><sp/>5<sp/><sp/><sp/><sp/>6<sp/><sp/><sp/><sp/>7<sp/><sp/><sp/><sp/>8<sp/><sp/><sp/><sp/>9<sp/><sp/><sp/><sp/>10<sp/><sp/><sp/>11<sp/><sp/><sp/>12<sp/><sp/><sp/>13<sp/><sp/><sp/>14<sp/><sp/><sp/>15<sp/><sp/><sp/>16</highlight></codeline>
+<codeline><highlight class="normal">-----+-------------------------------------------------------------------------------------</highlight></codeline>
+<codeline><highlight class="normal">Value|<sp/>0x00<sp/>0x01<sp/>0x02<sp/>0x03<sp/>0x04<sp/>0x05<sp/>0x06<sp/>0x07<sp/>0x08<sp/>0x09<sp/>0x0A<sp/>0x0B<sp/>0x0C<sp/>0x0D<sp/>0x0E<sp/>0x0F<sp/>0x10</highlight></codeline>
+</programlisting></para>
+<para>then the output of <computeroutput>std::cout&lt;&lt;memoryView;</computeroutput> will be:</para>
+<para><programlisting><codeline><highlight class="normal">0x00<sp/>0x01<sp/>0x02<sp/>0x03<sp/>0x04<sp/>0x05<sp/>0x06<sp/>0x07<sp/>0x08<sp/>0x09<sp/>0x0a<sp/>0x0b<sp/>0x0c<sp/>0x0d<sp/>0x0e<sp/>0x0f</highlight></codeline>
+<codeline><highlight class="normal">0x10</highlight></codeline>
+</programlisting></para>
+<para>As you can see this type of output is much more expected when memory is being serialized.</para>
+<para><bold>Note</bold> - The case of the alphabets can be controlled in the usual way using <computeroutput>std::uppercase</computeroutput> and <computeroutput>std::nouppercase</computeroutput>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="281" column="1" bodyfile="src/GenericView.hpp" bodystart="281" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="group__OutputStreamOperators_1ga0401c2c418a80b24fa30bc31a76ff160" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ValueType</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::TreeNode&lt; ValueType &gt; &amp;node)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">Shroon::Structure::TreeNode</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the data inside <computeroutput>node</computeroutput> to <computeroutput>out</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of data which the node contains. Used for template parameters of <computeroutput>TreeNode</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>node</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>TreeNode&lt;ValueType&gt;</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="533" column="1" bodyfile="src/Tree.hpp" bodystart="533" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="group__OutputStreamOperators_1gaac9f70c18d4fd06f146bbf89e84ee217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ValueType</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Shroon::Structure::Tree&lt; ValueType &gt; &amp;tree)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classShroon_1_1Structure_1_1Tree" kindref="compound">Shroon::Structure::Tree</ref>&lt; ValueType &gt; &amp;</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+<para>Outputs the <computeroutput>tree</computeroutput> to <computeroutput>out</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of data which the nodes of <computeroutput>tree</computeroutput> contain. Used for template parameters of <computeroutput>Tree</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>std::ostream &amp;</computeroutput> to output the content of <computeroutput>tree</computeroutput> to. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tree</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput>Tree&lt;ValueType&gt;</computeroutput> whose content needs to be written to <computeroutput>out</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><computeroutput>out</computeroutput> after outputting content to it.</para>
+</simplesect>
+Example - For the following tree,</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>A</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>/<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>B<sp/><sp/><sp/>C</highlight></codeline>
+<codeline><highlight class="normal"><sp/>/\<sp/><sp/><sp/>/\</highlight></codeline>
+<codeline><highlight class="normal">D<sp/><sp/>E<sp/>F<sp/><sp/>G</highlight></codeline>
+</programlisting></para>
+<para>the output will be:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/>[A]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>[B<sp/>C]</highlight></codeline>
+<codeline><highlight class="normal">[D<sp/>E][F<sp/>G]</highlight></codeline>
+</programlisting></para>
+<para>Here, nodes inside <computeroutput>[]</computeroutput> mean they have the same parent. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="569" column="1" bodyfile="src/Tree.hpp" bodystart="569" bodyend="665"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This group contains all output stream operators defined in this library for data structures. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

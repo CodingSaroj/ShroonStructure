@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classShroon_1_1Structure_1_1GenericIterator" kind="class" language="C++" prot="public">
+    <compoundname>Shroon::Structure::GenericIterator</compoundname>
+    <includes refid="GenericIterator_8hpp" local="no">GenericIterator.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+      <param>
+        <type>typename StructureType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1af758c0180045cc99006f239d0228036d" prot="private" static="no" mutable="no">
+        <type>StructureType *</type>
+        <definition>StructureType* Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::m_Structure</definition>
+        <argsstring></argsstring>
+        <name>m_Structure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="208" column="28" bodyfile="src/GenericIterator.hpp" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1a5727f92168f952dc8a4c6f267fa0a6cf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::m_Index</definition>
+        <argsstring></argsstring>
+        <name>m_Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="209" column="20" bodyfile="src/GenericIterator.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1ab42e73438bfd8d78b643e3f5634c3375" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::m_Valid</definition>
+        <argsstring></argsstring>
+        <name>m_Valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="210" column="18" bodyfile="src/GenericIterator.hpp" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1GenericIterator_1a248357a7de7eaa377fee97a4feff0f2d" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::StructureType</definition>
+        <argsstring></argsstring>
+        <name>StructureType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="218" column="20" bodyfile="src/GenericIterator.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1aac590b5fc7c8590d4c53557e9611f705" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::Valid</definition>
+        <argsstring>()</argsstring>
+        <name>Valid</name>
+        <briefdescription>
+<para>Checks if the iterator points to a valid element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the iterator points to a valid element and <computeroutput>false</computeroutput> if it is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="61" column="25" bodyfile="src/GenericIterator.hpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a2f6d50b871f0e110400c0a94e5de8dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ValueType &amp;</type>
+        <definition>ValueType&amp; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::Base</definition>
+        <argsstring>()</argsstring>
+        <name>Base</name>
+        <briefdescription>
+<para>Returns an l-value reference to the data pointed by this iterator if it is valid otherwise reports an error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An l-value reference to <computeroutput>ValueType</computeroutput> which is pointed by this iterator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="72" column="31" bodyfile="src/GenericIterator.hpp" bodystart="72" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1ab3e032bec0b902752176623c632eb2d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator bool</definition>
+        <argsstring>()</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+<para>Checks if the iterator points to a valid element. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> if the iterator points to a valid element and <computeroutput>false</computeroutput> if it is invalid. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="88" column="20" bodyfile="src/GenericIterator.hpp" bodystart="88" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a86b5145095cf89df574dd0c721cd932c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ValueType &amp;</type>
+        <definition>ValueType&amp; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <briefdescription>
+<para>Returns an l-value reference to the data pointed by this iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An l-value reference to <computeroutput>ValueType</computeroutput> which is pointed by this iterator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="98" column="31" bodyfile="src/GenericIterator.hpp" bodystart="98" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a848826b2fd4cb9ceb930f99cc5e7d17d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
+        <definition>GenericIterator&lt;ValueType, StructureType&gt; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Increments the element index of this iterator and returns an unchanged copy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The unchanged copy of this iterator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="108" column="36" bodyfile="src/GenericIterator.hpp" bodystart="108" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a805f8b872d7a01d40221df3aafa21b71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
+        <definition>GenericIterator&lt;ValueType, StructureType&gt; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator--</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator--</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Decrements the element index of this iterator and returns an unchanged copy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The unchanged copy of this iterator. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="121" column="36" bodyfile="src/GenericIterator.hpp" bodystart="121" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1aa367254c92b791fb2c19cb5ede053aad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+<para>Increments the element index of this iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="132" column="25" bodyfile="src/GenericIterator.hpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a728a61e851c4e0db4342bdb47ea574a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <briefdescription>
+<para>Decrements the element index of this iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="140" column="25" bodyfile="src/GenericIterator.hpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a0fcdb1087c2b3c67743cd3895605c2e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
+        <definition>GenericIterator&lt;ValueType, StructureType&gt; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator+</definition>
+        <argsstring>(size_t num)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Returns an iterator whose element index is this iterator&apos;s element index increased by <computeroutput>num</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount by which the element index should be increased.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The iterator with updated element index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="153" column="36" bodyfile="src/GenericIterator.hpp" bodystart="153" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1aa04f60654557edd18c1b34ebf84c9dfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
+        <definition>GenericIterator&lt;ValueType, StructureType&gt; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator-</definition>
+        <argsstring>(size_t num)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Returns an iterator whose element index is this iterator&apos;s element index decreased by <computeroutput>num</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount by which the element index should be decreased.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The iterator with updated element index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="169" column="36" bodyfile="src/GenericIterator.hpp" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1acb4676e9441ce45d5c66fcfd4db8ea3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
+        <definition>GenericIterator&lt;ValueType, StructureType&gt; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator+=</definition>
+        <argsstring>(size_t num)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Increases the element index of this iterator by <computeroutput>num</computeroutput> and returns this iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount by which the element index should be increased.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>This iterator with it&apos;s element index updated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="185" column="36" bodyfile="src/GenericIterator.hpp" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a2dab8d0548ccab168ced1621be2ba487" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref>&lt; ValueType, StructureType &gt;</type>
+        <definition>GenericIterator&lt;ValueType, StructureType&gt; Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::operator-=</definition>
+        <argsstring>(size_t num)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>size_t</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>Decreases the element index of this iterator by <computeroutput>num</computeroutput> and returns this iterator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount by which the element index should be decreased.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>This iterator with it&apos;s element index updated. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="200" column="36" bodyfile="src/GenericIterator.hpp" bodystart="200" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1GenericIterator_1a4ba396ab20bc350004ec2d041df9c3ed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;::GenericIterator</definition>
+        <argsstring>(StructureType *structure, size_t index)</argsstring>
+        <name>GenericIterator</name>
+        <param>
+          <type>StructureType *</type>
+          <declname>structure</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericIterator.hpp" line="212" column="13" bodyfile="src/GenericIterator.hpp" bodystart="212" bodyend="216"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic iterator interface that works with any data structure class that exposes certain functions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of an element inside <computeroutput>StructureType</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>StructureType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the structure the iterator will be iterating.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+A data structure which needs to be iterated by this iterator needs to follow the following criteria:</para>
+<para><orderedlist>
+<listitem><para>The structure should have a way to access all the elements using unique continuous unsigned indices.</para>
+</listitem><listitem><para>Implement <computeroutput>bool IsIndexValid(size_t index) const</computeroutput> function which returns if the given index is valid.</para>
+</listitem><listitem><para>Implement <computeroutput>ValueType &amp; Get(size_t index)</computeroutput> which returns the element which belongs to the given index. <computeroutput>ValueType</computeroutput> must be the type which is passed as first template parameter to <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref></computeroutput>. A const version of this function i.e. <computeroutput>const ValueType &amp; Get(size_t index) const</computeroutput> is also required.</para>
+</listitem></orderedlist>
+</para>
+<para>The iterator declares the <computeroutput>StructureType</computeroutput> as a friend class so, the data structure can access private members of the iterator.</para>
+<para>Unless the required functions are part of the API for the structure, it is recommended to implement these functions as private members and add <computeroutput><ref refid="classShroon_1_1Structure_1_1GenericIterator" kindref="compound">GenericIterator</ref></computeroutput> as a friend class. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Shroon::Structure::GenericIterator&lt; ValueType, StructureType &gt;</label>
+        <link refid="classShroon_1_1Structure_1_1GenericIterator"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/GenericIterator.hpp" line="53" column="1" bodyfile="src/GenericIterator.hpp" bodystart="52" bodyend="219"/>
+    <listofallmembers>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a2f6d50b871f0e110400c0a94e5de8dd2" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>Base</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a4ba396ab20bc350004ec2d041df9c3ed" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>GenericIterator</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a5727f92168f952dc8a4c6f267fa0a6cf" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>m_Index</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1af758c0180045cc99006f239d0228036d" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>m_Structure</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1ab42e73438bfd8d78b643e3f5634c3375" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>m_Valid</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1ab3e032bec0b902752176623c632eb2d4" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator bool</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a86b5145095cf89df574dd0c721cd932c" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator*</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a0fcdb1087c2b3c67743cd3895605c2e1" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator+</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a848826b2fd4cb9ceb930f99cc5e7d17d" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator++</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1aa367254c92b791fb2c19cb5ede053aad" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator++</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1acb4676e9441ce45d5c66fcfd4db8ea3c" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator+=</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1aa04f60654557edd18c1b34ebf84c9dfd" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator-</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a805f8b872d7a01d40221df3aafa21b71" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator--</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a728a61e851c4e0db4342bdb47ea574a2" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator--</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a2dab8d0548ccab168ced1621be2ba487" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>operator-=</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1a248357a7de7eaa377fee97a4feff0f2d" prot="private" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>StructureType</name></member>
+      <member refid="classShroon_1_1Structure_1_1GenericIterator_1aac590b5fc7c8590d4c53557e9611f705" prot="public" virt="non-virtual"><scope>Shroon::Structure::GenericIterator</scope><name>Valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classShroon_1_1Structure_1_1Tree" kind="class" language="C++" prot="public">
+    <compoundname>Shroon::Structure::Tree</compoundname>
+    <includes refid="Tree_8hpp" local="no">Tree.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ValueType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classShroon_1_1Structure_1_1Tree_1a1f3a24751be348558fd89852d2edea12" prot="private" static="no" mutable="no">
+        <type><ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt;</type>
+        <definition>TreeNode&lt;ValueType&gt; Shroon::Structure::Tree&lt; ValueType &gt;::m_Root</definition>
+        <argsstring></argsstring>
+        <name>m_Root</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="507" column="22" bodyfile="src/Tree.hpp" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a12ddef10495414dead0e160692cff828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Shroon::Structure::Tree&lt; ValueType &gt;::Tree</definition>
+        <argsstring>(const ValueType &amp;value)</argsstring>
+        <name>Tree</name>
+        <param>
+          <type>const ValueType &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput>Tree&lt;ValueType&gt;</computeroutput> with root node containing <computeroutput>value</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to store in root node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="321" column="13" bodyfile="src/Tree.hpp" bodystart="321" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a601f47675ab5f8b17155114d5e3b157f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Shroon::Structure::Tree&lt; ValueType &gt;::Tree</definition>
+        <argsstring>(ValueType &amp;&amp;value)</argsstring>
+        <name>Tree</name>
+        <param>
+          <type>ValueType &amp;&amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput>Tree&lt;ValueType&gt;</computeroutput> with root node containing <computeroutput>value</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to store in root node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="331" column="13" bodyfile="src/Tree.hpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1adb6811125ea81e34ab4c12e1d3667619" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>CArgs</declname>
+            <defname>CArgs</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>Shroon::Structure::Tree&lt; ValueType &gt;::Tree</definition>
+        <argsstring>(CArgs &amp;&amp;... cargs)</argsstring>
+        <name>Tree</name>
+        <param>
+          <type>CArgs &amp;&amp;...</type>
+          <declname>cargs</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput>Tree&lt;ValueType&gt;</computeroutput> with root node containing value which is constructed using <computeroutput>cargs</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>CArgs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter pack of types of the args of the constructor of <computeroutput>ValueType</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cargs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter pack containing args for the constructor of <computeroutput>ValueType</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="345" column="13" bodyfile="src/Tree.hpp" bodystart="345" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a4f0770b006efdea18feadf87bc4c8f3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; &amp;</type>
+        <definition>TreeNode&lt;ValueType&gt;&amp; Shroon::Structure::Tree&lt; ValueType &gt;::GetRoot</definition>
+        <argsstring>()</argsstring>
+        <name>GetRoot</name>
+        <briefdescription>
+<para>Returns an l-value reference to the root node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An l-value reference to the root node. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="355" column="30" bodyfile="src/Tree.hpp" bodystart="355" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1afe28526eec08b82d0b5b3d110d62ed0a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; &amp;</type>
+        <definition>const TreeNode&lt;ValueType&gt;&amp; Shroon::Structure::Tree&lt; ValueType &gt;::GetRoot</definition>
+        <argsstring>() const</argsstring>
+        <name>GetRoot</name>
+        <briefdescription>
+<para>Returns a const l-value reference to the root node. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A const l-value reference to the root node. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="365" column="36" bodyfile="src/Tree.hpp" bodystart="365" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1a064dc1890f9d14c960f359ed65c035ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; * &gt;</type>
+        <definition>std::vector&lt;TreeNode&lt;ValueType&gt; *&gt; Shroon::Structure::Tree&lt; ValueType &gt;::GetNodesAtHeight</definition>
+        <argsstring>(size_t height)</argsstring>
+        <name>GetNodesAtHeight</name>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Returns an array of pointer to all the nodes at a certain height in the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height from which nodes are returned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An <computeroutput>std::vector</computeroutput> of pointer to all the nodes at a certain height in the tree. An array of size 1 means no nodes are on that height. The array also has some <computeroutput>nullptr</computeroutput> elements which separate children of on node from children of other nodes.</para>
+</simplesect>
+Example - In the following tree:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>A</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>/<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>B<sp/><sp/><sp/>C</highlight></codeline>
+<codeline><highlight class="normal"><sp/>/\<sp/><sp/><sp/>/\</highlight></codeline>
+<codeline><highlight class="normal">D<sp/><sp/>E<sp/>F<sp/><sp/>G</highlight></codeline>
+</programlisting></para>
+<para>If we retrieve nodes at height 2 we expect <computeroutput>[D, E, F, G]</computeroutput> but we get <computeroutput>[nullptr, D, E, nullptr, F, G]</computeroutput>. The <computeroutput>nullptr</computeroutput> means the node afterwards are children of the same parent and when another <computeroutput>nullptr</computeroutput> comes it means that the parent of the following nodes are different than the previous one.</para>
+<para>In this case:<itemizedlist>
+<listitem><para>0: <computeroutput>nullptr</computeroutput> - Following nodes are children of first parent node (B).</para>
+</listitem><listitem><para>1: <computeroutput>D</computeroutput> - Child of one node (B).</para>
+</listitem><listitem><para>2: <computeroutput>E</computeroutput> - Child of one node (B). <linebreak/>
+</para>
+</listitem><listitem><para>3: <computeroutput>nullptr</computeroutput> - Following nodes are children of second parent node (C).</para>
+</listitem><listitem><para>4: <computeroutput>F</computeroutput> - Child of another node (C).</para>
+</listitem><listitem><para>5: <computeroutput>G</computeroutput> - Child of another node (C). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="402" column="25" bodyfile="src/Tree.hpp" bodystart="402" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classShroon_1_1Structure_1_1Tree_1aea0672a9d5120f14aac206ab97e9e082" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; const <ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref>&lt; ValueType &gt; * &gt;</type>
+        <definition>std::vector&lt;const TreeNode&lt;ValueType&gt; *&gt; Shroon::Structure::Tree&lt; ValueType &gt;::GetNodesAtHeight</definition>
+        <argsstring>(size_t height) const</argsstring>
+        <name>GetNodesAtHeight</name>
+        <param>
+          <type>size_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Returns an array of pointer to all the nodes at a certain height in the tree. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height from which nodes are returned.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An <computeroutput>std::vector</computeroutput> of pointer to all the nodes at a certain height in the tree. An array of size 1 means no nodes are on that height. The array also has some <computeroutput>nullptr</computeroutput> elements which separate children of on node from children of other nodes.</para>
+</simplesect>
+Example - In the following tree:</para>
+<para><programlisting><codeline><highlight class="normal"><sp/><sp/><sp/><sp/>A</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>/<sp/>\</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>B<sp/><sp/><sp/>C</highlight></codeline>
+<codeline><highlight class="normal"><sp/>/\<sp/><sp/><sp/>/\</highlight></codeline>
+<codeline><highlight class="normal">D<sp/><sp/>E<sp/>F<sp/><sp/>G</highlight></codeline>
+</programlisting></para>
+<para>If we retrieve nodes at height 2 we expect <computeroutput>[D, E, F, G]</computeroutput> but we get <computeroutput>[nullptr, D, E, nullptr, F, G]</computeroutput>. The <computeroutput>nullptr</computeroutput> means the node afterwards are children of the same parent and when another <computeroutput>nullptr</computeroutput> comes it means that the parent of the following nodes are different than the previous one.</para>
+<para>In this case:<itemizedlist>
+<listitem><para>0: <computeroutput>nullptr</computeroutput> - Following nodes are children of first parent node (B).</para>
+</listitem><listitem><para>1: <computeroutput>D</computeroutput> - Child of one node (B).</para>
+</listitem><listitem><para>2: <computeroutput>E</computeroutput> - Child of one node (B). <linebreak/>
+</para>
+</listitem><listitem><para>3: <computeroutput>nullptr</computeroutput> - Following nodes are children of second parent node (C).</para>
+</listitem><listitem><para>4: <computeroutput>F</computeroutput> - Child of another node (C).</para>
+</listitem><listitem><para>5: <computeroutput>G</computeroutput> - Child of another node (C). </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Tree.hpp" line="470" column="25" bodyfile="src/Tree.hpp" bodystart="470" bodyend="504"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>It defines a tree data structure. It only consists of the root node, other nodes are accessed using the interface of <computeroutput><ref refid="classShroon_1_1Structure_1_1TreeNode" kindref="compound">TreeNode</ref></computeroutput> class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ValueType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of value, nodes of this tree store. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Shroon::Structure::Tree&lt; ValueType &gt;</label>
+        <link refid="classShroon_1_1Structure_1_1Tree"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Tree.hpp" line="314" column="1" bodyfile="src/Tree.hpp" bodystart="313" bodyend="508"/>
+    <listofallmembers>
+      <member refid="classShroon_1_1Structure_1_1Tree_1a064dc1890f9d14c960f359ed65c035ab" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>GetNodesAtHeight</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1aea0672a9d5120f14aac206ab97e9e082" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>GetNodesAtHeight</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1a4f0770b006efdea18feadf87bc4c8f3d" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>GetRoot</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1afe28526eec08b82d0b5b3d110d62ed0a" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>GetRoot</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1a1f3a24751be348558fd89852d2edea12" prot="private" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>m_Root</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1a12ddef10495414dead0e160692cff828" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>Tree</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1a601f47675ab5f8b17155114d5e3b157f" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>Tree</name></member>
+      <member refid="classShroon_1_1Structure_1_1Tree_1adb6811125ea81e34ab4c12e1d3667619" prot="public" virt="non-virtual"><scope>Shroon::Structure::Tree</scope><name>Tree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

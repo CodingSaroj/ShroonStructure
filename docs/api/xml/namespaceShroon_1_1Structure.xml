@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespaceShroon_1_1Structure" kind="namespace" language="C++">
+    <compoundname>Shroon::Structure</compoundname>
+    <innerclass refid="classShroon_1_1Structure_1_1GenericIterator" prot="public">Shroon::Structure::GenericIterator</innerclass>
+    <innerclass refid="classShroon_1_1Structure_1_1GenericView" prot="public">Shroon::Structure::GenericView</innerclass>
+    <innerclass refid="classShroon_1_1Structure_1_1Tree" prot="public">Shroon::Structure::Tree</innerclass>
+    <innerclass refid="classShroon_1_1Structure_1_1TreeNode" prot="public">Shroon::Structure::TreeNode</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" prot="public" static="no">
+        <type><ref refid="classShroon_1_1Structure_1_1GenericView" kindref="compound">GenericView</ref>&lt; uint8_t &gt;</type>
+        <definition>using Shroon::Structure::MemoryView = typedef GenericView&lt;uint8_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>MemoryView</name>
+        <briefdescription>
+<para>It specifically views the contents of memory as bytes (<computeroutput>uint8_t</computeroutput>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GenericView.hpp" line="199" column="9" bodyfile="src/GenericView.hpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__ErrorReporting_1gaa663639f37c5e84cf29963eae5fb3f10" prot="public" static="no" mutable="no">
+        <type>std::function&lt; void(std::string, bool)&gt;</type>
+        <definition>std::function&lt;void(std::string, bool)&gt; Shroon::Structure::ErrorReporter</definition>
+        <argsstring></argsstring>
+        <name>ErrorReporter</name>
+        <briefdescription>
+<para>A callback the data structures will use when an error occurs. First parameter is the info about the error and second parameter is true when the error is fatal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ErrorReporter.hpp" line="27" column="30" declfile="src/ErrorReporter.hpp" declline="27" declcolumn="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The namespace in which all the ShroonStructure API exists. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ErrorReporter.hpp" line="16" column="1"/>
+  </compounddef>
+</doxygen>

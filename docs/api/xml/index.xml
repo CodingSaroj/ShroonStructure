@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="classShroon_1_1Structure_1_1GenericIterator" kind="class"><name>Shroon::Structure::GenericIterator</name>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1af758c0180045cc99006f239d0228036d" kind="variable"><name>m_Structure</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a5727f92168f952dc8a4c6f267fa0a6cf" kind="variable"><name>m_Index</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1ab42e73438bfd8d78b643e3f5634c3375" kind="variable"><name>m_Valid</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a248357a7de7eaa377fee97a4feff0f2d" kind="variable"><name>StructureType</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1aac590b5fc7c8590d4c53557e9611f705" kind="function"><name>Valid</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a2f6d50b871f0e110400c0a94e5de8dd2" kind="function"><name>Base</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1ab3e032bec0b902752176623c632eb2d4" kind="function"><name>operator bool</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a86b5145095cf89df574dd0c721cd932c" kind="function"><name>operator*</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a848826b2fd4cb9ceb930f99cc5e7d17d" kind="function"><name>operator++</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a805f8b872d7a01d40221df3aafa21b71" kind="function"><name>operator--</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1aa367254c92b791fb2c19cb5ede053aad" kind="function"><name>operator++</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a728a61e851c4e0db4342bdb47ea574a2" kind="function"><name>operator--</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a0fcdb1087c2b3c67743cd3895605c2e1" kind="function"><name>operator+</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1aa04f60654557edd18c1b34ebf84c9dfd" kind="function"><name>operator-</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1acb4676e9441ce45d5c66fcfd4db8ea3c" kind="function"><name>operator+=</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a2dab8d0548ccab168ced1621be2ba487" kind="function"><name>operator-=</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericIterator_1a4ba396ab20bc350004ec2d041df9c3ed" kind="function"><name>GenericIterator</name></member>
+  </compound>
+  <compound refid="classShroon_1_1Structure_1_1GenericView" kind="class"><name>Shroon::Structure::GenericView</name>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a2f922f057abd0b62e502a65aa83a1768" kind="typedef"><name>Iterator</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1aa1fe817a7bc2003c4a2b4ec2d0c686e5" kind="typedef"><name>ConstIterator</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a5c6ed9100d970b19f8281287bd8c50c2" kind="variable"><name>m_Data</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a7712392c0ccca8d313be7b5967b3ceb3" kind="variable"><name>m_Size</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a29657e5c490d5da9a7c6e10ea347d66d" kind="variable"><name>Iterator</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a3c0c1546d6711fa83e10d79f329e3b29" kind="variable"><name>ConstIterator</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1adf04ae73537d26ef9f0204cb57ddc858" kind="function"><name>GenericView</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a1d0997b8ddb43829d22dacfacd772585" kind="function"><name>Data</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a58e98a59a21c1f70cdb1d89810c993ab" kind="function"><name>Data</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a7f59b7df2d2a51d3d4a91adbf3211e9d" kind="function"><name>Size</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a00e76fc6df517dbf2b9250fcb838bec6" kind="function"><name>At</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1aedeecf23228e2b56fdfc1300ca0d4457" kind="function"><name>At</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a42af29b526807bd7bffd9e487105790b" kind="function"><name>View</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a4845ad8de58b48adfe64c33a9ee264b6" kind="function"><name>View</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a085b29b5bf040497c4141f93baa484af" kind="function"><name>operator[]</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1ae06ab76b9521a6ee509c5360a8b9e961" kind="function"><name>operator[]</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a6b579011dbfe85768698d561fe0596f6" kind="function"><name>IsIndexValid</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a0066cdeb692f11a83bbca84c245ece41" kind="function"><name>Get</name></member>
+    <member refid="classShroon_1_1Structure_1_1GenericView_1a95f45eeb00ef45b23cbacbeeb2c722a5" kind="function"><name>Get</name></member>
+  </compound>
+  <compound refid="classShroon_1_1Structure_1_1Tree" kind="class"><name>Shroon::Structure::Tree</name>
+    <member refid="classShroon_1_1Structure_1_1Tree_1a1f3a24751be348558fd89852d2edea12" kind="variable"><name>m_Root</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1a12ddef10495414dead0e160692cff828" kind="function"><name>Tree</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1a601f47675ab5f8b17155114d5e3b157f" kind="function"><name>Tree</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1adb6811125ea81e34ab4c12e1d3667619" kind="function"><name>Tree</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1a4f0770b006efdea18feadf87bc4c8f3d" kind="function"><name>GetRoot</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1afe28526eec08b82d0b5b3d110d62ed0a" kind="function"><name>GetRoot</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1a064dc1890f9d14c960f359ed65c035ab" kind="function"><name>GetNodesAtHeight</name></member>
+    <member refid="classShroon_1_1Structure_1_1Tree_1aea0672a9d5120f14aac206ab97e9e082" kind="function"><name>GetNodesAtHeight</name></member>
+  </compound>
+  <compound refid="classShroon_1_1Structure_1_1TreeNode" kind="class"><name>Shroon::Structure::TreeNode</name>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a981ce75cb9b79817ad4d8515d2be01be" kind="variable"><name>m_Base</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1ace86eecee2d8348c7e640cc00c99b7fa" kind="variable"><name>m_Parent</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1ab29dd7d42e01de7d65dddc7ab06a53d8" kind="variable"><name>m_Children</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aeecf799a2e77c30a56e82cdd8caa9ded" kind="function"><name>TreeNode</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a31bea01fb59a1d33b93ff20d64d6168f" kind="function"><name>TreeNode</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1ae4b1f8373afce1331edf78532291b880" kind="function"><name>TreeNode</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aa4e78ea3d9bede1840d04815b45d20af" kind="function"><name>Get</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aa70279d5baeef7119fb8e4c03b928302" kind="function"><name>Get</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1ae21faa6a293fda425422a678fd485f65" kind="function"><name>GetParent</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a8f9157cfcf1fbe101c6cdd70ec53326a" kind="function"><name>GetParent</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aa7c0736e1710bd05a77a45d5685b0526" kind="function"><name>ChildrenCount</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a3518ad033b110f2771a127b8e463136e" kind="function"><name>GetChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a3ba3063214d984b2483a111ea88ac6a6" kind="function"><name>GetChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a76642ffa3cb42edc5bc1caa1f5d543e4" kind="function"><name>AddChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aa0bf4b7c6b484faee303b2e2e8cc8ce3" kind="function"><name>AddChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1ac06b3c8d101adf2e6bc93ba2804bf4ac" kind="function"><name>AddChild</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a5025e54016e0ee4dfd67d14ecd1c08e5" kind="function"><name>AddSibling</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1aecc70e898292978774a56bad490342f9" kind="function"><name>AddSibling</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1af893dbbe11bc2c8846a5ad1aa55e24ab" kind="function"><name>AddSibling</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a50c35fc7006d451b1d23045507017b1b" kind="function"><name>operator*</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1a732ac1780e650530dab8ff53b44ffa0f" kind="function"><name>operator*</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1af00eb9076c1bc08f6b192afac0191e3b" kind="function"><name>operator[]</name></member>
+    <member refid="classShroon_1_1Structure_1_1TreeNode_1ab4d23daad7d807db45868ae4cd42f865" kind="function"><name>operator[]</name></member>
+  </compound>
+  <compound refid="namespaceShroon" kind="namespace"><name>Shroon</name>
+  </compound>
+  <compound refid="namespaceShroon_1_1Structure" kind="namespace"><name>Shroon::Structure</name>
+    <member refid="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" kind="typedef"><name>MemoryView</name></member>
+    <member refid="group__ErrorReporting_1gaa663639f37c5e84cf29963eae5fb3f10" kind="variable"><name>ErrorReporter</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="ErrorReporter_8hpp" kind="file"><name>ErrorReporter.hpp</name>
+    <member refid="group__ErrorReporting_1gaa597ef9c4c9bf360e52aa1d5aff96322" kind="define"><name>SHRN_STRUCTURE_DEFAULT_ERROR_REPORTER</name></member>
+  </compound>
+  <compound refid="GenericIterator_8hpp" kind="file"><name>GenericIterator.hpp</name>
+    <member refid="group__OutputStreamOperators_1gaa2709b0b1d9d2eb88883ff47d89ed20a" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="GenericView_8hpp" kind="file"><name>GenericView.hpp</name>
+    <member refid="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group__OutputStreamOperators_1ga0fcf44cd9af8a867af765d99303d66bd" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="Structures_8hpp" kind="file"><name>Structures.hpp</name>
+  </compound>
+  <compound refid="Tree_8hpp" kind="file"><name>Tree.hpp</name>
+    <member refid="group__OutputStreamOperators_1ga0401c2c418a80b24fa30bc31a76ff160" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group__OutputStreamOperators_1gaac9f70c18d4fd06f146bbf89e84ee217" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="group__ErrorReporting" kind="group"><name>ErrorReporting</name>
+    <member refid="group__ErrorReporting_1gaa663639f37c5e84cf29963eae5fb3f10" kind="variable"><name>ErrorReporter</name></member>
+    <member refid="group__ErrorReporting_1gaa597ef9c4c9bf360e52aa1d5aff96322" kind="define"><name>SHRN_STRUCTURE_DEFAULT_ERROR_REPORTER</name></member>
+  </compound>
+  <compound refid="group__DataStructures" kind="group"><name>DataStructures</name>
+    <member refid="group__DataStructures_1ga26fddc84a2d4852d54f9d320dd69ccae" kind="typedef"><name>MemoryView</name></member>
+  </compound>
+  <compound refid="group__OutputStreamOperators" kind="group"><name>OutputStreamOperators</name>
+    <member refid="group__OutputStreamOperators_1gaa2709b0b1d9d2eb88883ff47d89ed20a" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group__OutputStreamOperators_1ga81bfaab98e6d3c6743a7df3359622d7d" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group__OutputStreamOperators_1ga0fcf44cd9af8a867af765d99303d66bd" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group__OutputStreamOperators_1ga0401c2c418a80b24fa30bc31a76ff160" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group__OutputStreamOperators_1gaac9f70c18d4fd06f146bbf89e84ee217" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>
